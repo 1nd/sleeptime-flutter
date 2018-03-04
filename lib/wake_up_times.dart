@@ -20,7 +20,7 @@ class WakeUpTimes extends StatelessWidget {
       time = time.add(cycleLength);
       String timeAsString = new DateFormat.Hm().format(time);
       Duration napFor =
-          new Duration(minutes: i * cycleLengthMinute + fallAsleepMinute);
+          new Duration(minutes: i * cycleLengthMinute);
       String napForAsString = prettyDuration(napFor);
       times.add(new ListTile(
         title: new Text(timeAsString),
